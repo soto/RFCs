@@ -15,11 +15,12 @@ int main (void)
     assert (rc == 0);
 
     while (1) {
-        char buffer [10];
-        zmq_recv (responder, buffer, 10, 0);
-        printf ("Received Hello\n");
+        const char* msg = "LucTeo (blue shirt + red)";
+        char buffer [1000];
+        zmq_recv (responder, buffer, 1000, 0);
+        printf ("Received Hello (%s)\n", buffer);
         sleep (1);          //  Do some 'work'
-        zmq_send (responder, "World", 5, 0);
+        zmq_send (responder, msg, sizeof(msg), 0);
     }
     return 0;
 }
