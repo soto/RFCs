@@ -1,5 +1,6 @@
-Connect to Room (disconnected) AP Wifi 
-Network name
-ssid: TEO-0CC75AF3
-passwd:  6fe5e0a0a0
-
+#Connect to Room (disconnected) AP Wifi Network name and optional passwords
+#ssid \t Optional_passwd
+TEO-0CC75AF3	6fe5e0a0a0
+12345678	12345678
+Radisson_GUEST
+edgenet
