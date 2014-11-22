@@ -1,5 +1,4 @@
 
-PROGRAM=hello_world
 DEBUG_FLAGS=
 OPT_LEVEL=-O2
 INCLUDES=-I/usr/local/include
@@ -9,16 +8,16 @@ RUN_ARGS=50000
 
 OPTS=-O2
 
-$(PROGRAM).out:  $(PROGRAM).o
-	$(GCC) -o $(PROGRAM).out $(PROGRAM).o $(LIBS) $(OPT_LEVEL) $(DEBUG_FLAGS)
+all: server.out client.out
 
-$(PROGRAM).o: $(PROGRAM).c
-	$(GCC) -o $(PROGRAM).o $(PROGRAM).c -c $(OPT_LEVEL) $(CPP_FLAGS) $(INCLUDES)
+%.out: %.o
+	$(GCC) -o $@ $< $(LIBS) $(OPT_LEVEL) $(DEBUG_FLAGS)
 
-all: $(PROGRAM).out
+%.o: %.c
+	$(GCC) -o $@ $< -c $(OPT_LEVEL) $(CPP_FLAGS) $(INCLUDES)
 
-run: $(PROGRAM).out
-	./$(PROGRAM).out $(RUN_ARGS)
+run: server.out
+	./server.out $(RUN_ARGS)
 
 clean:
 	rm -f *~
