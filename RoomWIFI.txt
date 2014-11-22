@@ -1,7 +1,7 @@
 #Connect to Room (disconnected) AP Wifi Network name and optional passwords
 #ssid \t Optional_passwd
-TEO-0CC75AF3	6fe5e0a0a0
+TEO-0CC75AF3	6fe5e0a0a0	192.168.1.0/24
 12345678	12345678
-Radisson_GUEST		192.168.1.0/24
+Radisson_GUEST		nolocalnetwork	
 edgenet
 zmqAndroid1	ionceateabug
