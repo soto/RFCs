@@ -1,0 +1,5 @@
+Connect to Room (disconnected) AP Wifi 
+Network name
+ssid: TEO-0CC75AF3
+passwd:  6fe5e0a0a0
+
