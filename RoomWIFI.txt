@@ -4,3 +4,4 @@ TEO-0CC75AF3	6fe5e0a0a0
 12345678	12345678
 Radisson_GUEST
 edgenet
+zmqAndroid1	ionceateabug
