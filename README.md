@@ -1,11 +1,8 @@
 RFCs
 ====
-We're using tcp on port 5556. 
 
-The client will send Hello and the server will reply with Hello. 
+We are defining the Requests For Comments for the Distributed Programming workshop during the BuildStuff '14 workshops in this repository.
 
-The Server and Client must be two different processes.
+Following RFCs were defined:
 
-We want to make the server port and ip address configurable from the command line.
-
-====
+- [RFC-1: Hello World Service](RFC-1.md)
